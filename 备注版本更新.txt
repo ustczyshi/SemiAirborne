@@ -1,0 +1,9 @@
+更新版本：2016.11.11
+关于长接地导线源激励的半航空瞬变电磁响应的求解子函数，已经改写。
+
+1.Calculate_Horizontal_Finite_Electrical_Source.m
+2.Calculate_Horizontal_Finite_Electrical_Source_unsave.m
+3.Calculate_Horizontal_Finite_Electrical_Source_GuaLeg.m
+4.Calculate_Horizontal_Finite_Electrical_Source_GuaLeg_out.m
+
+其中子函数4的计算速度最快。原因是：4在计算过程中，源长只分解一次，对后续每个偏移点的正演不再进行充分分解，大大节约了时间。
